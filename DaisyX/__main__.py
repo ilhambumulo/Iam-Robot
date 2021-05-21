@@ -365,11 +365,12 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Halo Lagi Pantek!  Namaku {dispatcher.bot.first_name} 😍 \n\nAku Adalah Bot Group Management Yang Dimanage oleh [Mol](https://t.me/betterthaanhecan) .* "
-            f"\n\n 🔥 Join [RuangPublik](https://t.me/ruangpublikk) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
-            f"\n\n Aku punya banyak fungsi seperti Flood Control, Warn, Ban dan fungsi lain nya untuk mencegah orang-orang tolol merusuh diGroup mu."
-            f"\n\nCukup Jadikan Aku Admin dan Kita Bantai Orang Goblok Di Telegram"
-            f"\n\n👇 Cukup tekan tombol dibawah untuk lebih banyak informasi 👇",
+            text=f"*Hai Kontol ☠️!  Gua {dispatcher.bot.first_name} 😍 \n\nGua dalah Bot Group Management Yang Dimanage oleh [Leo Angkasa](https://t.me/leoangkasaaa) .* "
+            f"\n\n 🔥 Support Nih Anjeng [Rebellestory](https://t.me/storyangkasa) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
+            f"\n\n Gua Punya Banyak Fungsi Nih Anjeng, Cek Sendiri Ajalah Kontol!"
+            f"\n\nPokoknya Lu Jadiin Gua Admin Ya Anjeng!"
+            f"\n\n** 
+Tekan Tombol Dibawah Terus Baca Itu Asu ⬇️**,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
