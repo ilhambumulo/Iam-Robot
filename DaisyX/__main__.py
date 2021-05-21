@@ -369,8 +369,7 @@ def DaisyX_about_callback(update, context):
             f"\n\n 🔥 Support Nih Anjeng [Rebellestory](https://t.me/storyangkasa) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
             f"\n\n Gua Punya Banyak Fungsi Nih Anjeng, Cek Sendiri Ajalah Kontol!"
             f"\n\nPokoknya Lu Jadiin Gua Admin Ya Anjeng!"
-            f"\n\n**Tekan Tombol Dibawah Untuk Mengetahui Tentang Gua!**
-
+            f"\n\n**Tekan Tombol Dibawah Untuk Mengetahui Tentang Gua!**"
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
