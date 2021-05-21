@@ -54,7 +54,7 @@ def ban(update: Update, context: CallbackContext) -> str:
     try:
         member = chat.get_member(user_id)
     except BadRequest as excp:
-        if excp.message == "User not found":
+        if excp.message == "Pengguna Tidak Ditemukan":
             message.reply_text("Can't seem to find this person.")
             return log_message
         else:
@@ -97,10 +97,10 @@ def ban(update: Update, context: CallbackContext) -> str:
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#BANNED\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        f"<b>Jamet Kontol:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
     if reason:
-        log += "\n<b>Reason:</b> {}".format(reason)
+        log += "\n<b>Alasan:</b> {}".format(reason)
 
     try:
         chat.kick_member(user_id)
@@ -265,8 +265,8 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"Banned! User {mention_html(member.user.id, html.escape(member.user.first_name))} "
-            f"will be banned for {time_val}.",
+            f"Terbanned Kau {mention_html(member.user.id, html.escape(member.user.first_name))} Bangsat"
+            f"Dalam Waktu {time_val}.",
             parse_mode=ParseMode.HTML,
         )
         return log
@@ -275,7 +275,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         if excp.message == "Reply message not found":
             # Do not reply
             message.reply_text(
-                f"Banned! User will be banned for {time_val}.", quote=False
+                f"Banned Jamet! Terbanned Dalam Waktu {time_val}.", quote=False
             )
             return log
         else:
@@ -413,7 +413,7 @@ def kick(update: Update, context: CallbackContext) -> str:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"User Kicked Woops! {mention_html(member.user.id, html.escape(member.user.first_name))}.",
+            f"Tendang Si Jamet Kontol, Bye Asu! {mention_html(member.user.id, html.escape(member.user.first_name))}.",
             parse_mode=ParseMode.HTML,
         )
         log = (
@@ -487,14 +487,14 @@ def skick(update: Update, context: CallbackContext) -> str:
 def kickme(update: Update, context: CallbackContext):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("I wish I could... but you're an admin.")
+        update.effective_message.reply_text("Lu Admin Kontol! Gausa Sombong Tolol.)
         return
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
     if res:
-        update.effective_message.reply_text("*kicks you out of the group*")
+        update.effective_message.reply_text("*Tendang Lu Dari Grup Asu*")
     else:
-        update.effective_message.reply_text("Huh? I can't :/")
+        update.effective_message.reply_text("Gabisa Anjeng:/")
 
 
 @run_async
