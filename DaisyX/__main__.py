@@ -63,11 +63,11 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Halo Pantek, Aku [Guard Fckg](https://telegra.ph/file/86492475a12d1a1af5d58.jpg)
+Halo Kontol, Gua [King Rebel'S](https://telegra.ph/file/291306ff240132e399830.jpg)
 
-Aku Official Bot Group Fvckg Partner untuk membasmi Orang-Orang Tolol.
+Gua Adalah Bot Manage Group Rebellionnss! Gua hadir untuk membasmi JAMET KONTOL.
 
-✪Baca Dulu Info Biar Paham Pantek✪ 
+•Baca Info Dibawah! Jangan Malas Membaca•
 """
 
 buttons = [
@@ -79,25 +79,25 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="Add Reevas Ke Group🖕", url="t.me/fvcking13bot?startgroup=true"
+            text="SUPPORT KONTOL", url="t.me/storyangkasa"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Mol", url="t.me/Betterthaanhecan"
+            text="MASUK KONTOL", url="t.me/rebellionnss"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Daftar Command :* [🖕](https://telegra.ph/file/9238385798316f737a0eb.jpg)
-✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
+*Daftar Command :* [🤖](https://telegra.ph/file/dbd2fac3445363ae69b89.jpg)
+✪ /start: Mulai Gua!
+✪ /help: Tekan Ini, Jika Mau Tau Tentang Gua!
+✪ /donate: Donasi Doang.
 ✪ /settings: 
-   ◔ in PM: will send you your settings for all supported modules.
-   ◔ in a Group: will redirect you to pm, with all that chat's settings.
+   ◔ di PM: Command ini digunakan hanya untuk di PM
+   ◔ in a Group: Langsung akan di arahkan ke PM bot
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -227,7 +227,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Bot King Rebel Menyala Anjeng🔥!\n<b>Belum Meninggal Sejak:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
