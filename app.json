@@ -1,5 +1,5 @@
 {
-      "name": "Daisy X",
+      "name": "Space X",
       "description": "An Anime themed Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -8,7 +8,7 @@
          "manager",
          "DaisyX"
       ],   
-   "repository": "https://github.com/molana062/Daisy-x",
+   "repository": "https://github.com/AngkasaBoy/Space-x",
    "addons": [
       {
          "options": {
