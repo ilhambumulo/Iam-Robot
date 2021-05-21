@@ -89,7 +89,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     bot.sendMessage(
         chat.id,
-        f"Sucessfully promoted <b>{user_member.user.first_name or user_id}</b>!",
+        f"Sukses Jadikan Babu Si <b>{user_member.user.first_name or user_id}</b>!",
         parse_mode=ParseMode.HTML,
     )
 
@@ -157,7 +157,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
         bot.sendMessage(
             chat.id,
-            f"Sucessfully demoted <b>{user_member.user.first_name or user_id}</b>!",
+            f"Berhasil Pecat Babu Ga Guna Si <b>{user_member.user.first_name or user_id}</b>!",
             parse_mode=ParseMode.HTML,
         )
 
@@ -247,7 +247,7 @@ def set_title(update: Update, context: CallbackContext):
 
     bot.sendMessage(
         chat.id,
-        f"Sucessfully set title for <code>{user_member.user.first_name or user_id}</code> "
+        f"Sukses Ganti Title Si Babu <code>{user_member.user.first_name or user_id}</code> "
         f"to <code>{html.escape(title[:16])}</code>!",
         parse_mode=ParseMode.HTML,
     )
@@ -365,15 +365,15 @@ def adminlist(update, context):
 
     try:
         msg = update.effective_message.reply_text(
-            "Fetching group admins...", parse_mode=ParseMode.HTML
+            "Proses Memuat Para Anak Asu...", parse_mode=ParseMode.HTML
         )
     except BadRequest:
         msg = update.effective_message.reply_text(
-            "Fetching group admins...", quote=False, parse_mode=ParseMode.HTML
+            "Proses Memuat Para Anak Asu...", quote=False, parse_mode=ParseMode.HTML
         )
 
     administrators = bot.getChatAdministrators(chat_id)
-    text = "Admins in <b>{}</b>:".format(html.escape(update.effective_chat.title))
+    text = "Babu Owner Di <b>{}</b>:".format(html.escape(update.effective_chat.title))
 
     bot_admin_list = []
 
@@ -383,7 +383,7 @@ def adminlist(update, context):
         custom_title = admin.custom_title
 
         if user.first_name == "":
-            name = "☠ Deleted Account"
+            name = "☠ Babu Depesi"
         else:
             name = "{}".format(
                 mention_html(
@@ -399,7 +399,7 @@ def adminlist(update, context):
         # if user.username:
         #    name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n 👑 Creator:"
+            text += "\n 🗡️ Owner:"
             text += "\n<code> • </code>{}\n".format(name)
 
             if custom_title:
