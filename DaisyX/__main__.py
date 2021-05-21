@@ -369,8 +369,8 @@ def DaisyX_about_callback(update, context):
             f"\n\n 🔥 Support Nih Anjeng [Rebellestory](https://t.me/storyangkasa) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
             f"\n\n Gua Punya Banyak Fungsi Nih Anjeng, Cek Sendiri Ajalah Kontol!"
             f"\n\nPokoknya Lu Jadiin Gua Admin Ya Anjeng!"
-            f"\n\n** 
-Tekan Tombol Dibawah Terus Baca Itu Asu ⬇️**,
+            f"\n\n**Tekan Tombol Dibawah Untuk Mengetahui Tentang Gua!**
+
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -404,7 +404,7 @@ Tekan Tombol Dibawah Terus Baca Itu Asu ⬇️**,
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nTambakan {dispatcher.bot.first_name} Ke Groupmu [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) dan pilih Groupmu. \n"
-            f"\n\nDapatkan info tentang bot {dispatcher.bot.first_name} Dengan Pc Kontak [Mol](https://t.me/Betterthaanhecan).\n"
+            f"\n\nDapatkan info tentang bot {dispatcher.bot.first_name} Dengan Pc Kontak [Leo Angkasa](https://t.me/leoangkasaaa).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
