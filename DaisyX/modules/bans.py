@@ -413,7 +413,7 @@ def kick(update: Update, context: CallbackContext) -> str:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"Tendang Si Jamet Kontol, Bye Asu! {mention_html(member.user.id, html.escape(member.user.first_name))}.",
+            f"Tendangan Dari Tuhan Buat Jamet, Bye Asu! {mention_html(member.user.id, html.escape(member.user.first_name))}.",
             parse_mode=ParseMode.HTML,
         )
         log = (
@@ -487,7 +487,7 @@ def skick(update: Update, context: CallbackContext) -> str:
 def kickme(update: Update, context: CallbackContext):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("Lu Admin Kontol! Gausa Sombong Tolol.)
+        update.effective_message.reply_text("Lu Admin Kontol! Gausa Sombong Tolol.")
         return
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
