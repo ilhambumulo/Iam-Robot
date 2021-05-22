@@ -416,7 +416,7 @@ def adminlist(update, context):
         custom_title = admin.custom_title
 
         if user.first_name == "":
-            name = "☠ Deleted Account"
+            name = "☠ Bocah Depresi"
         else:
             name = "{}".format(
                 mention_html(
@@ -446,12 +446,12 @@ def adminlist(update, context):
 
     text += "\n"
     for admin_group in custom_admin_list:
-        text += "\n🚨 <code>{}</code>".format(admin_group)
+        text += "\n⚔️ <code>{}</code>".format(admin_group)
         for admin in custom_admin_list[admin_group]:
             text += "\n<code> • </code>{}".format(admin)
         text += "\n"
 
-    text += "\n🤖 Bots:"
+    text += "\n🤖 Babu Owner:"
     for each_bot in bot_admin_list:
         text += "\n<code> • </code>{}".format(each_bot)
 
@@ -462,7 +462,7 @@ def adminlist(update, context):
 
 
 __help__ = """
- ✪ /admins*:* list of admins in the chat
+ ✪ /admins*:* daftar admin di grup
 
 *Admins only:*
  ✪ /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
