@@ -622,26 +622,26 @@ HIT = (
 )
 
 PUNCH_TEMPLATES = (
-    "{user1} {punches} {user2} with a {item}.",
-    "{user1} {punches} {user2} in the face with a {item}.",
-    "{user1} {punches} {user2} around a bit with a {item}.",
-    "{user1} {punches} {user2} on their face. 👊",
+    "{user1} {punches} {user2} menggunakan {item}.",
+    "{user1} {punches} {user2} dimuka menggunakan sebuah{item}.",
+    "{user1} {punches} {user2} dengan sedikit menggunakan {item}.",
+    "{user1} {punches} {user2} di wajah mereka. 👊",
 )
 
 HUG_TEMPLATES = (
     "{user1} {hug} {user2}.",
-    "{user1} {hug} {user2} warmly.",
-    "{user1} {hug} {user2} with a love. 💘",
-    "{user1} {hug} {user2} with kindness.",
+    "{user1} {hug} {user2} dengan hangat 💖.",
+    "{user1} {hug} {user2} dengan sebuah cinta. 💘",
+    "{user1} {hug} {user2} dengan kebaikan 💕.",
 )
 
 PUNCH = (
-    "punch",
-    "punched",
-    "smack",
+    "meninju",
+    "ditinju",
+    "memukul",
 )
 
-HUG = ("hugs", "hugged", "kissed", "pinches")
+HUG = ("pelukan", "berpelukan", "dicium", "mencubit")
 
 # Table strings credits: @DaisyX
 
