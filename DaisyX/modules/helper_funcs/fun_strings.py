@@ -1,8 +1,8 @@
 # taken from @zoldycktmbot
 TRUTH = (
-    "Do you pick your nose?",
-    "Do you sing in the shower? ",
-    "Do you ever talk to yourself in the mirror? ",
+    "Apakah Anda mengorek hidung Anda?",
+    "Apakah Anda bernyanyi di kamar mandi?",
+    "Benarkah Anda Sedang Menonton Film Porno?  ",
     "Have you ghosted someone?",
     "Have you ever walked in on your parents doing 'it'?",
     "Who was the last person you liked the most? Why?",
