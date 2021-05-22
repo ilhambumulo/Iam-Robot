@@ -30,11 +30,11 @@ TRUTH = (
 
     "Jelaskan pasangan ideal Anda.",
 
-    "Apa hal paling menakutkan yang pernah Anda lakukan?",
+    "Apa hal paling menakutkan yang pernah Anda lakukan?`",
 
-    "Apakah kamu pernah mengupil dan memakannya?",
+    "Apakah kamu pernah mengupil dan memakannya?`",
 
-    "Kapan terakhir kali Anda berbohong kepada orang tua Anda dan mengapa?",
+    "Kapan terakhir kali Anda berbohong kepada orang tua Anda dan mengapa`?",
 
     "Apakah Anda pernah berbohong tentang usia Anda untuk berpartisipasi dalam sebuah kontes?",
 
@@ -78,96 +78,165 @@ TRUTH = (
 )
 
 DARE = (
-    "Show the most embarrassing photo on your phone",
-    "Show the last five people you texted and what the messages said",
-    "Let the rest of the group DM someone from your Instagram account",
-    "Eat a raw piece of garlic",
-    "Do 100 squats",
-    "Keep three ice cubes in your mouth until they melt",
-    "Say something dirty to the person on your leftYou've got company!",
-    "Give a foot massage to the person on your right",
-    "Put 10 different available liquids into a cup and drink it",
-    "*Yell out the first word that comes to your mind",
-    "Give a lap dance to someone of your choice",
-    "Remove four items of clothing",
-    "Like the first 15 posts on your Facebook newsfeed",
-    "Eat a spoonful of mustard",
-    "Keep your eyes closed until it's your go again",
-    "Send a sext to the last person in your phonebook",
-    "Show off your orgasm face",
-    "Seductively eat a banana",
-    "Empty out your wallet/purse and show everyone what's inside",
-    "Do your best sexy crawl",
-    "Pretend to be the person to your right for 10 minutes",
-    "Eat a snack without using your hands",
-    "Say two honest things about everyone else in the group",
-    "Twerk for a minute",
-    "Try and make the group laugh as quickly as possible",
-    "Try to put your whole fist in your mouth",
-    "Tell everyone an embarrassing story about yourself",
-    "Try to lick your elbow",
-    "Post the oldest selfie on your phone on Instagram Stories",
-    "Tell the saddest story you know",
-    "Howl like a wolf for two minutes",
-    "Dance without music for two minutes",
-    "Pole dance with an imaginary pole",
-    "Let someone else tickle you and try not to laugh",
-    "Put as many snacks into your mouth at once as you can",
-    "Send your most recent selfie.",
-    "Send your ugliest selfie.",
-    "Send a screenshot of your facebook search history",
-    "Send a screenshot of your gallery.",
-    "Send a screenshot of your messenger inbox",
-    "Tell something very intimate.",
-    "Send a screenshot of your twitter inbox",
-    "Send a screenshot of your homescreen.",
-    "Send a cover of your favorite song. 🎤",
-    "Do a lyric prank on someone and send proof.",
-    "Confess to your current crush. ❤️",
-    "Declare who is your true love.",
-    "Send a screenshot of your gallery.",
-    "Set your crush’s picture as your dp.",
-    "Suggest me more dares.",
+    "Tunjukkan foto paling memalukan di ponsel Anda",
+
+    "Tunjukkan lima orang terakhir yang Anda kirimi SMS dan isi pesannya",
+
+    "Biarkan anggota grup lainnya DM seseorang dari akun Instagram Anda",
+
+    "Makan sepotong bawang putih mentah",
+
+    "Lakukan 100 squat",
+
+    "Simpan tiga es batu di mulutmu sampai mencair",
+
+    "Katakan sesuatu yang kotor kepada orang di sebelah kiri Anda. Anda punya teman!",
+
+    "Berikan pijatan kaki kepada orang di sebelah kanan Anda",
+
+    "Taruh 10 cairan berbeda yang tersedia ke dalam cangkir dan minumlah",
+
+    "* Teriakkan kata pertama yang terlintas di benakmu",
+
+    "Berikan lap dance kepada seseorang pilihan Anda",
+
+    "Hapus empat item pakaian",
+
+    "Sukai 15 kiriman pertama di umpan berita Facebook Anda",
+
+    "Makan sesendok mustard",
+
+    "Tetap tutup matamu sampai kamu pergi lagi",
+
+    "Kirim sext ke orang terakhir di buku telepon Anda",
+
+    "Pamerkan wajah orgasme Anda",
+
+    "Makan pisang dengan menggoda",
+
+    "Kosongkan dompet Anda dan tunjukkan kepada semua orang apa yang ada di dalamnya",
+
+    "Lakukan perayapan seksi terbaik Anda",
+
+    "Berpura-pura menjadi orang di sebelah kanan Anda selama 10 menit",
+
+    "Makan camilan tanpa menggunakan tanganmu",
+
+    "Katakan dua hal yang jujur tentang orang lain dalam grup",
+
+    "Twerk sebentar",
+
+    "Cobalah dan buat grup tertawa secepat mungkin",
+
+    "Cobalah untuk memasukkan seluruh kepalan tanganmu ke dalam mulutmu",
+
+    "Ceritakan kepada semua orang cerita memalukan tentang diri Anda",
+
+    "Cobalah untuk menjilat siku Anda",
+
+    "Posting selfie terlama di ponsel Anda di Instagram Stories",
+
+    "Ceritakan kisah paling menyedihkan yang Anda tahu",
+
+    "Melolong seperti serigala selama dua menit",
+
+    "Menari tanpa musik selama dua menit",
+
+    "Tarian tiang dengan tiang imajiner",
+
+    "Biarkan orang lain menggelitik Anda dan mencoba untuk tidak tertawa",
+
+    "Masukkan camilan sebanyak mungkin ke dalam mulut Anda",
+
+    "Kirim selfie terbaru Anda.",
+
+    "Kirimkan selfie paling jelekmu.",
+
+    "Kirim tangkapan layar riwayat penelusuran facebook Anda",
+
+    "Kirim tangkapan layar galeri Anda.",
+
+    "Kirim tangkapan layar dari kotak masuk messenger Anda",
+
+    "Katakan sesuatu yang sangat intim.",
+
+    "Kirim tangkapan layar dari kotak masuk twitter Anda",
+
+    "Kirim tangkapan layar dari layar beranda Anda.",
+
+    "Kirim cover lagu favorit Anda. 🎤",
+
+    "Lakukan lelucon lirik pada seseorang dan kirimkan bukti.",
+
+    "Mengaku untuk orang yang kamu sukai saat ini. ❤️",
+
+    "Nyatakan siapa cinta sejatimu.",
+
+    "Kirim tangkapan layar galeri Anda.",
+
+    "Tetapkan foto orang yang Anda sukai sebagai profil Anda.",
 )
 
 
 # Taken from Openuserbot.
 GDNIGHT = [
-    "`Good night keep your dreams alive`",
-    "`Night, night, to a dear friend! May you sleep well!`",
-    "`May the night fill with stars for you. May counting every one, give you contentment!`",
-    "`Wishing you comfort, happiness, and a good night’s sleep!`",
-    "`Now relax. The day is over. You did your best. And tomorrow you’ll do better. Good Night!`",
-    "`Good night to a friend who is the best! Get your forty winks!`",
-    "`May your pillow be soft, and your rest be long! Good night, friend!`",
-    "`Let there be no troubles, dear friend! Have a Good Night!`",
-    "`Rest soundly tonight, friend!`",
-    "`Have the best night’s sleep, friend! Sleep well!`",
-    "`Have a very, good night, friend! You are wonderful!`",
-    "`Relaxation is in order for you! Good night, friend!`",
-    "`Good night. May you have sweet dreams tonight.`",
-    "`Sleep well, dear friend and have sweet dreams.`",
-    "`As we wait for a brand new day, good night and have beautiful dreams.`",
-    "`Dear friend, I wish you a night of peace and bliss. Good night.`",
-    "`Darkness cannot last forever. Keep the hope alive. Good night.`",
-    "`By hook or crook you shall have sweet dreams tonight. Have a good night, buddy!`",
-    "`Good night, my friend. I pray that the good Lord watches over you as you sleep. Sweet dreams.`",
-    "`Good night, friend! May you be filled with tranquility!`",
-    "`Wishing you a calm night, friend! I hope it is good!`",
-    "`Wishing you a night where you can recharge for tomorrow!`",
-    "`Slumber tonight, good friend, and feel well rested, tomorrow!`",
-    "`Wishing my good friend relief from a hard day’s work! Good Night!`",
-    "`Good night, friend! May you have silence for sleep!`",
-    "`Sleep tonight, friend and be well! Know that you have done your very best today, and that you will do your very best, tomorrow!`",
-    "`Friend, you do not hesitate to get things done! Take tonight to relax and do more, tomorrow!`",
-    "`Friend, I want to remind you that your strong mind has brought you peace, before. May it do that again, tonight! May you hold acknowledgment of this with you!`",
-    "`Wishing you a calm, night, friend! Hoping everything winds down to your liking and that the following day meets your standards!`",
-    "`May the darkness of the night cloak you in a sleep that is sound and good! Dear friend, may this feeling carry you through the next day!`",
-    "`Friend, may the quietude you experience tonight move you to have many more nights like it! May you find your peace and hold on to it!`",
-    "`May there be no activity for you tonight, friend! May the rest that you have coming to you arrive swiftly! May the activity that you do tomorrow match your pace and be all of your own making!`",
-    "`When the day is done, friend, may you know that you have done well! When you sleep tonight, friend, may you view all the you hope for, tomorrow!`",
-    "`When everything is brought to a standstill, friend, I hope that your thoughts are good, as you drift to sleep! May those thoughts remain with you, during all of your days!`",
-    "`Every day, you encourage me to do new things, friend! May tonight’s rest bring a new day that overflows with courage and exciting events!`",
+    "Selamat malam, jaga mimpimu tetap hidup`",
+
+    "Malam, malam, untuk seorang teman tersayang! Semoga kamu tidur nyenyak!",
+
+    "Semoga malam penuh bintang untukmu. Semoga menghitung setiap, memberimu kepuasan! ",
+
+    "Semoga Anda nyaman, bahagia, dan tidur nyenyak!",
+
+    "Sekarang santai. Hari sudah berakhir. Kamu melakukan yang terbaik. Dan besok kamu akan melakukan yang lebih baik. Selamat Malam!",
+
+    "Selamat malam untuk seorang teman yang terbaik! Dapatkan empat puluh kedipanmu!",
+
+    "Semoga bantalmu empuk, dan istirahatmu panjang! Selamat malam sobat!",
+
+    "`Biarlah tidak ada masalah, sobat! Selamat Malam! '",
+
+    "`Istirahatlah dengan nyenyak malam ini, teman!`",
+
+    "`Semoga tidur nyenyak, teman! Tidur nyenyak!`",
+
+    "`Selamat malam, teman! Kamu luar biasa!`",
+
+    "`Relaksasi itu untuk Anda! Selamat malam, teman!",
+
+    "`Selamat malam. Semoga kamu memiliki mimpi indah malam ini.`",
+
+    "`Dear Friend, saya berharap Anda mendapatkan malam yang damai dan bahagia. Selamat malam.` ",
+
+    "` Kegelapan tidak bisa bertahan selamanya. Pertahankan harapan tetap hidup. Selamat malam.` ",
+
+    "Dengan baik atau jahat kamu akan memiliki mimpi indah malam ini. Selamat malam, sobat!",
+
+    "Selamat malam, temanku. Saya berdoa agar Tuhan yang baik mengawasi Anda saat Anda tidur. Mimpi indah.`",
+
+    "`Selamat malam teman! Semoga kamu dipenuhi dengan ketenangan!",
+
+    "`Semoga malammu tenang teman! Semoga baik-baik saja!",
+
+    "Semoga Anda mendapatkan malam di mana Anda dapat mengisi ulang untuk besok!",
+
+    "Tidurlah malam ini, teman baik, dan istirahatlah dengan baik, besok!",
+
+    "Semoga teman baikku terbebas dari kerja keras seharian! Selamat malam!",
+
+    "Selamat malam teman! Semoga kamu diam saja untuk tidur!",
+
+    "Tidur malam ini, teman dan sehatlah! Ketahuilah bahwa Anda telah melakukan yang terbaik hari ini, dan bahwa Anda akan melakukan yang terbaik, besok!",
+
+    "Sobat, jangan ragu untuk menyelesaikan sesuatu! Ambil malam ini untuk bersantai dan berbuat lebih banyak, besok!",
+
+    "Sobat, saya ingin mengingatkan Anda bahwa pikiran kuat Anda telah membawa Anda kedamaian, sebelumnya. Semoga itu terjadi lagi, malam ini! Semoga Anda memegang pengakuan ini dengan Anda!",
+
+    "Semoga Anda tenang, malam, teman! Berharap semuanya sesuai dengan keinginan Anda dan bahwa keesokan harinya memenuhi standar Anda!",
+
+    "`Semoga kegelapan malam menyelimuti Anda dalam tidur yang nyenyak dan baik! Teman terkasih, semoga perasaan ini membawa Anda melewati hari berikutnya!",
+
+    "Teman, semoga ketenangan yang Anda alami malam ini menggerakkan Anda untuk mengalami lebih banyak malam seperti itu! Semoga Anda menemukan kedamaian Anda dan berpegang padanya!",
 ]
 
 # Taken from Openuserbot.
