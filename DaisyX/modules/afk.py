@@ -37,7 +37,7 @@ def afk(update: Update, context: CallbackContext):
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_text("Babay {} Kontol, Gausa Balek Ya Anjeng !{}".format(fname, notice))
+        update.effective_message.reply_text("Babay {}, Gausa Balik Ya Kontol !{}".format(fname, notice))
     except BadRequest:
         pass
 
@@ -135,12 +135,12 @@ def check_afk(update, context, user_id, fst_name, userc_id):
         if not user.reason:
             if int(userc_id) == int(user_id):
                 return
-            res = "{} Lage Depresi Anjeng".format(fst_name)
+            res = "{} Lagi Sibuk Kontol, Jangan Ganggu Dulu Asu.".format(fst_name)
             update.effective_message.reply_text(res)
         else:
             if int(userc_id) == int(user_id):
                 return
-            res = "{} Gi Depresi.\nAlasan: <code>{}</code>".format(
+            res = "{} Lagi Sibuk Asu.\nAlasan: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
