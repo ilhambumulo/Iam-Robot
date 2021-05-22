@@ -61,7 +61,7 @@ def ban(update: Update, context: CallbackContext) -> str:
             raise
 
     if user_id == bot.id:
-        message.reply_text("Oh yeah, ban myself, noob!")
+        message.reply_text("Oh Si Goblok Mau Ban Diri Gua Sendiri, Gabisa Lah Asu!")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
@@ -106,18 +106,18 @@ def ban(update: Update, context: CallbackContext) -> str:
         chat.kick_member(user_id)
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code>❕</code><b>Ban Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<code>❕</code><b>Tindakan Ghosting</b>\n"
+            f"<code> </code><b>•  Korban Ghosting:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
-            reply += f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}"
+            reply += f"\n<code> </code><b>•  Alasan:</b> \n{html.escape(reason)}"
         bot.sendMessage(chat.id, reply, parse_mode=ParseMode.HTML, quote=False)
         return log
 
     except BadRequest as excp:
-        if excp.message == "Reply message not found":
+        if excp.message == "Pesan Tidak Ditemukan":
             # Do not reply
-            message.reply_text("Banned!", quote=False)
+            message.reply_text("Terghosting Anjing!", quote=False)
             return log
         else:
             LOGGER.warning(update)
@@ -172,11 +172,11 @@ def sban(update: Update, context: CallbackContext) -> str:
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#SBANNED\n"
-        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        f"<b>Pelaku Ghosting:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>Korban Ghosting:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
     if reason:
-        log += "\n<b>Reason:</b> {}".format(reason)
+        log += "\n<b>Alasan:</b> {}".format(reason)
 
     try:
         chat.kick_member(user_id)
@@ -253,19 +253,19 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
         "#TEMP BANNED\n"
-        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}\n"
-        f"<b>Time:</b> {time_val}"
+        f"<b>Pelaku Ghosting:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>Korban Ghosting:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}\n"
+        f"<b>Durasi:</b> {time_val}"
     )
     if reason:
-        log += "\n<b>Reason:</b> {}".format(reason)
+        log += "\n<b>Alasan:</b> {}".format(reason)
 
     try:
         chat.kick_member(user_id, until_date=bantime)
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"Terbanned Kau {mention_html(member.user.id, html.escape(member.user.first_name))} Bangsat"
+            f"Terghosting Kau {mention_html(member.user.id, html.escape(member.user.first_name))} Bangsat"
             f"Dalam Waktu {time_val}.",
             parse_mode=ParseMode.HTML,
         )
@@ -275,7 +275,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         if excp.message == "Reply message not found":
             # Do not reply
             message.reply_text(
-                f"Banned Jamet! Terbanned Dalam Waktu {time_val}.", quote=False
+                f"Ghosting Jamet! Terghosting Dalam Waktu {time_val}.", quote=False
             )
             return log
         else:
@@ -343,13 +343,13 @@ def stemp_ban(update: Update, context: CallbackContext) -> str:
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
-        "#STEMP BANNED\n"
-        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}\n"
-        f"<b>Time:</b> {time_val}"
+        "#GHOSTING BERWAKTU\n"
+        f"<b>Pelaku Ghosting:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>Korban Ghosting:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}\n"
+        f"<b>Durasi:</b> {time_val}"
     )
     if reason:
-        log += "\n<b>Reason:</b> {}".format(reason)
+        log += "\n<b>Alasan:</b> {}".format(reason)
 
     try:
         chat.kick_member(user_id, until_date=bantime)
@@ -419,11 +419,11 @@ def kick(update: Update, context: CallbackContext) -> str:
         log = (
             f"<b>{html.escape(chat.title)}:</b>\n"
             f"#KICKED\n"
-            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-            f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<b>Eksekutor:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>Korban:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
-            log += f"\n<b>Reason:</b> {reason}"
+            log += f"\n<b>Alasan:</b> {reason}"
 
         return log
 
@@ -470,11 +470,11 @@ def skick(update: Update, context: CallbackContext) -> str:
         log = (
             f"<b>{html.escape(chat.title)}:</b>\n"
             f"#SKICKED\n"
-            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-            f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<b>Eksekutor:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>Korban:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
-            log += f"\n<b>Reason:</b> {reason}"
+            log += f"\n<b>Alasan:</b> {reason}"
 
         return log
 
@@ -539,11 +539,11 @@ def unban(update: Update, context: CallbackContext) -> str:
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#UNBANNED\n"
-        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        f"<b>Eksekutor:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>Korban:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
     if reason:
-        log += f"\n<b>Reason:</b> {reason}"
+        log += f"\n<b>Alasan:</b> {reason}"
 
     return log
 
@@ -587,7 +587,7 @@ def selfunban(context: CallbackContext, update: Update) -> str:
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#UNBANNED\n"
-        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        f"<b>Korban Eksekusi:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
 
     return log
