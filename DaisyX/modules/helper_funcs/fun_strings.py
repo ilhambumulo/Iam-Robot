@@ -1,54 +1,80 @@
 # taken from @zoldycktmbot
 TRUTH = (
     "Apakah Anda mengorek hidung Anda?",
+
     "Apakah Anda bernyanyi di kamar mandi?",
-    "Benarkah Anda Sedang Menonton Film Porno?  ",
-    "Have you ghosted someone?",
-    "Have you ever walked in on your parents doing 'it'?",
-    "Who was the last person you liked the most? Why?",
-    "Have you ever been suspended from school?",
-    "If you had to choose between going naked or having your thoughts appear in thought bubbles above your head for everyone to read, which would you choose?",
-    "What’s the one thing you’re afraid to lose?",
-    "Do you like someone as of the moment?",
-    "One thing about your best friend you are jealous of?",
-    "Would you cheat on your boyfriend for a rich guy?",
-    "What is your biggest turn on?",
-    "When’s the last time you lied to your parents and why?",
-    "Describe your ideal partner.",
-    "What’s the scariest thing you’ve ever done?",
-    "Have you ever picked your nose and eaten it?",
-    "When’s the last time you lied to your parents and why?",
-    "Have you ever lied about your age to participate in a contest?",
-    "Have you ever been caught checking someone out?",
-    "Do you talk in your sleep?",
-    "Do you think you'll marry your current girlfriend/boyfriend?",
-    "Would you trade your sibling in for a million dollars?",
-    "Would You Slap Your Bestfriend For A Million Dollars?",
-    "Have you ever had a crush on a teacher?",
-    "Have you ever smoked?",
-    "Have you ever tried drugs?",
-    "What about alcohol?",
-    "Are you still a virgin?",
-    "describe your perfect partner.",
-    "If you could make $1 million, would you drop out of school?",
-    "What is your worst habit?",
-    "How many people have you kissed?",
-    "Describe what your crush looks like.",
-    "If your friend and your boyfriend were both dying in front of you, who would try to save first?",
-    "Do you think your friend's (Boyfriend/Girlfriend) is hot?",
-    "If someone asked you what your best friend is like, how would you describe her/him?",
-    "What do you think about him/her now?",
-    "Kya Apke Toothpaste Me Namak He?",
-    "Rasode Me Kon Tha?",
-    "If you had to trade your friend in for the celebrity crush of your dreams, which friend would you choose?",
-    "Would you share a toothbrush with your best friend?",
-    "Who's hotter? You or your friend?",
-    "Who Is Stupid?\n (A. Your Friend\n  (B. You",
-    "Have you ever told a lie about your best friend to make yourself look better?",
-    "What's one food that you will never order at a restaurant?",
-    "What's one thing you would never eat on a first date?",
-    "How long have you gone without brushing your teeth?",
-    "How long have you gone without a shower?",
+
+    "Benarkah Anda Sedang Menonton Film Porno?",
+
+    "Apakah Anda telah membuat hantu seseorang?",
+
+    "Apakah kamu pernah membiarkan orang tuamu melakukan 'itu'?",
+
+    "Siapa orang terakhir yang paling kamu sukai? Kenapa?",
+
+    "Apakah Anda pernah diskors dari sekolah?",
+
+    "Jika Anda harus memilih antara telanjang atau membuat pikiran Anda muncul dalam gelembung pikiran di atas kepala Anda untuk dibaca semua orang, mana yang akan Anda pilih?",
+
+    "Apa satu hal yang Anda takut kehilangan?",
+
+    "Apakah kamu menyukai seseorang saat ini?",
+
+    "Satu hal tentang sahabatmu yang membuatmu iri?",
+
+    "Apakah kamu akan mengkhianati pacarmu untuk orang kaya?",
+
+    "Apa giliran terbesar Anda?",
+
+    "Kapan terakhir kali Anda berbohong kepada orang tua Anda dan mengapa?",
+
+    "Jelaskan pasangan ideal Anda.",
+
+    "Apa hal paling menakutkan yang pernah Anda lakukan?",
+
+    "Apakah kamu pernah mengupil dan memakannya?",
+
+    "Kapan terakhir kali Anda berbohong kepada orang tua Anda dan mengapa?",
+
+    "Apakah Anda pernah berbohong tentang usia Anda untuk berpartisipasi dalam sebuah kontes?",
+
+    "Pernahkah Anda ketahuan sedang memeriksa seseorang?",
+
+    "Apakah Anda berbicara dalam tidur Anda?",
+
+    "Apakah kamu pikir kamu akan menikah dengan pacar kamu saat ini?",
+
+    "Maukah Anda menukar saudara Anda dengan satu juta dolar?",
+
+    "Maukah Anda Menampar Sahabat Anda Untuk Sejuta Dolar?",
+
+    "Apakah kamu pernah naksir guru?",
+
+    "Apakah kamu pernah merokok?",
+
+    "Apakah kamu pernah mencoba narkoba?",
+
+    "Bagaimana dengan alkohol?",
+
+    "Apakah kamu masih perawan?",
+
+    "gambarkan pasangan sempurna Anda.",
+
+    "Jika Anda dapat menghasilkan $ 1 juta, apakah Anda akan putus sekolah?",
+
+    "Apa kebiasaan terburukmu?",
+
+    "Berapa banyak orang yang telah kamu cium?",
+
+    "Jelaskan seperti apa orang yang Anda sukai.",
+
+    "Jika temanmu dan pacarmu sama-sama sekarat di depanmu, siapa yang akan mencoba menyelamatkan lebih dulu?",
+
+    "Apakah menurutmu (Pacar / Pacar) temanmu itu seksi?",
+
+    "Jika seseorang bertanya kepada Anda seperti apa sahabat Anda, bagaimana Anda menggambarkannya?",
+
+    "Apa pendapatmu tentang dia sekarang?",
 )
 
 DARE = (
