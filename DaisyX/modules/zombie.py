@@ -49,22 +49,22 @@ async def is_administrator(user_id: int, message):
 
 @telethn.on(events.NewMessage(pattern=f"^[!/]zombies ?(.*)"))
 async def zombies(event):
-    """ For .zombies command, list all the zombies in a chat. """
+    """ CMD .zombies untuk melihat daftar akun terhapus """
 
     con = event.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "No Deleted Accounts Found, Group Is Clean."
+    del_status = "Waw Grup Lu Gada Akun Terhapus, Bersih Sekale Epribadeh"
 
     if con != "clean":
-        find_zombies = await event.respond("Searching For Zombies...")
+        find_zombies = await event.respond("Mencari Akun Terhapus..")
         async for user in event.client.iter_participants(event.chat_id):
 
             if user.deleted:
                 del_u += 1
                 await sleep(1)
         if del_u > 0:
-            del_status = f"Found **{del_u}** Zombies In This Group.\
-            \nClean Them By Using - `/zombies clean`"
+            del_status = f"Ditemukan **{del_u}** Nich Akun Terhapus DiSini.\
+            \nGunakan - `/zombies clean` Untuk Membersihkan Itu"
         await find_zombies.edit(del_status)
         return
 
@@ -75,14 +75,14 @@ async def zombies(event):
 
     # Well
     if not await is_administrator(user_id=event.from_id, message=event):
-        await event.respond("You're Not An Admin!")
+        await event.respond("Lu Bukan Admin Bodoh!")
         return
 
     if not admin and not creator:
-        await event.respond("I Am Not An Admin Here!")
+        await event.respond("Gua Bukan Admin Disini Anjeng")
         return
 
-    cleaning_zombies = await event.respond("Cleaning Zombies...")
+    cleaning_zombies = await event.respond("Membersihkan Akun Terhapus...")
     del_u = 0
     del_a = 0
 
@@ -102,10 +102,10 @@ async def zombies(event):
             del_u += 1
 
     if del_u > 0:
-        del_status = f"Cleaned `{del_u}` Zombies"
+        del_status = f"Membersihkan `{del_u}` Akun Terhapus"
 
     if del_a > 0:
-        del_status = f"Cleaned `{del_u}` Zombies \
-        \n`{del_a}` Zombie Admin Accounts Are Not Removed!"
+        del_status = f"Membersihkan `{del_u}` Akun Terhapus \
+        \n`{del_a}` Akun Terhapus Admin Tidak Dibersihkan!"
 
     await cleaning_zombies.edit(del_status)
