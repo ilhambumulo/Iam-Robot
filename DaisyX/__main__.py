@@ -63,38 +63,38 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Halo Kontol, Gua [King Rebel'S](https://telegra.ph/file/291306ff240132e399830.jpg)
+Halo pantek, aku [IAM Robot](http://telegra.ph/file/ce9bdfa7d3e6a24481cde.jpg)
 
-Gua Adalah Bot Manage Group Rebellionnss! Gua hadir untuk membasmi JAMET KONTOL.
+Aku Official Bot Group IAM Robot untuk membasmi Orang-Orang Tolol di dunia pertelean.
 
-•Baca Info Dibawah! Jangan Malas Membaca•
+✪ Baca Dulu Info Biar Paham Pantek ✪
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),    
+        InlineKeyboardButton(text="🚀 INFO", callback_data="aboutmanu_"),    
     ],
     [
-        InlineKeyboardButton(text="📞 Help & Commands 📞", callback_data="help_back"),
+        InlineKeyboardButton(text="⛑ Help & Commands", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="SUPPORT KONTOL", url="t.me/storyangkasa"
+            text="📣 CH Support", url="t.me/infoiam"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="MASUK KONTOL", url="t.me/rebellionnss"
+            text="🔥 Group Support", url="t.me/emehcommunity"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Daftar Command :* [🤖](https://telegra.ph/file/dbd2fac3445363ae69b89.jpg)
-✪ /start: Mulai Gua!
-✪ /help: Tekan Ini, Jika Mau Tau Tentang Gua!
-✪ /donate: Donasi Doang.
+*Daftar Command :* [🤖](http://telegra.ph/file/ce9bdfa7d3e6a24481cde.jpg)
+✪ /start: Mulai aku!
+✪ /help: Tekan ini, jika mau tau tentangku!
+✪ /donate: Support owner.
 ✪ /settings: 
    ◔ di PM: Command ini digunakan hanya untuk di PM
    ◔ in a Group: Langsung akan di arahkan ke PM bot
@@ -104,9 +104,9 @@ HELP_STRINGS = f"""
 )
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer's of the Base code,
-Support them  [Inuka](t.me/InukaASiTH),[Jason](t.me/imjanindu),"""
+DONATE_STRING = """Heyo, senang mendengar anda ingin men donasi !
+Anda bisa men donasi dengan chat pribadi ke akun owner,
+Support saya  [Iam](t.me/iamnibng),"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -227,7 +227,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Bot King Rebel Menyala Anjeng🔥!\n<b>Belum Meninggal Sejak:</b> <code>{}</code>".format(
+            "IAM Robot Menyala Anjeng 🔥!\n<b>Belum Meninggal Sejak:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -365,11 +365,11 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*Hai Kontol ☠️!  Gua {dispatcher.bot.first_name} 😍 \n\nGua dalah Bot Group Management Yang Dimanage oleh [Leo Angkasa](https://t.me/leoangkasaaa) .* "
-            f"\n\n 🔥 Support Nih Anjeng [Rebellestory](https://t.me/storyangkasa) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
-            f"\n\n Gua Punya Banyak Fungsi Nih Anjeng, Cek Sendiri Ajalah Kontol!"
-            f"\n\nPokoknya Lu Jadiin Gua Admin Ya Anjeng!"
-            f"\n\n**Tekan Tombol Dibawah Untuk Mengetahui Tentang Gua!**",
+            text=f"*Halo lagi pantek!  Namaku {dispatcher.bot.first_name} \n\nAku dalah Bot Group Management Yang Dimanage oleh [Iam](https://t.me/iamnibng) .* "
+            f"\n\n 🔥 Join [IAM Support](https://t.me/infoiam) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
+            f"\n\n Aku punya banyak fungsi seperti Flood Control, Warn, Ban dan fungsi lain nya untuk mencegah orang-orang tolol merusuh diGroup mu!"
+            f"\n\nCukup Jadikan Aku Admin dan Kita Bantai Orang Goblok Di Telegram."
+            f"\n\n👇 **tekan tombol dibawah untuk lebih banyak informasi** 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -384,7 +384,7 @@ def DaisyX_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="❔Help & Commands", callback_data="help_back"
+                            text="⛑ Help & Commands", callback_data="help_back"
                         )
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
@@ -402,8 +402,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nTambakan {dispatcher.bot.first_name} Ke Groupmu [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) dan pilih Groupmu. \n"
-            f"\n\nDapatkan info tentang bot {dispatcher.bot.first_name} Dengan Pc Kontak [Leo Angkasa](https://t.me/leoangkasaaa).\n"
+            f"\nTambakan {dispatcher.bot.first_name} Ke Groupmu [Disini](http://t.me/{dispatcher.bot.username}?startgroup=true) dan pilih Groupmu. \n"
+            f"\n\nDapatkan info tentang bot {dispatcher.bot.first_name} Dengan Pc Kontak [Iam](https://t.me/iamnibng).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -424,8 +424,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Daisy](https://github.com/inukaasith/daisy) + [Naruto](https://github.com/imjanindu/narutorobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
+            f"\n\nOwner [Iam](https://t.me/iamnibng) + [IAM Support](https://t.me/infoiam)."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by Iam"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
