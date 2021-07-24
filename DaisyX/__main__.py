@@ -70,23 +70,24 @@ Aku Official Bot Group IAM Robot untuk membasmi Orang-Orang Tolol di dunia perte
 ✪ Baca Dulu Info Biar Paham Pantek ✪
 """
 
-buttons = [
-    [
-        InlineKeyboardButton(
-            "➕ Tambahkan saya ke Grup Anda ➕", url="http://t.me/asisteniambot?startgroup=true")],
-    [
-        InlineKeyboardButton(text="INFO 🚀", callback_data="aboutmanu_"),    
-        InlineKeyboardButton(text="Help & Commands ⛑", callback_data="help_back"),
-    ],[
-        InlineKeyboardButton(
-            "Channel Support 📣", url=f"http://t.me/infoiam")
-    ],[
-        InlineKeyboardButton(
-            "Group Support 🔥", url=f"http://t.me/emehcommunity")
-        ]
-    ]
-],
-
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ Tambahkan saya ke Grup Anda ➕", url=f"http://t.me/asisteniambot?startgroup=true")],
+                [
+                    InlineKeyboardButton(text="INFO 🚀", callback_data="aboutmanu_"),    
+                    InlineKeyboardButton(text="Help & Commands ⛑", callback_data="help_back"),
+                ],[
+                    InlineKeyboardButton(
+                        "Channel Support 📣", url=f"http://t.me/infoiam")
+                    InlineKeyboardButton(
+                        "Group Support 🔥", url=f"http://t.me/emehcommunity")
+                ]
+            ]
+        ),
+        reply_to_message_id=message.message_id
+        )
 
 HELP_STRINGS = f"""
 *Daftar Command :* [🤖](http://telegra.ph/file/ce9bdfa7d3e6a24481cde.jpg)
