@@ -72,19 +72,17 @@ Aku Official Bot Group IAM Robot untuk membasmi Orang-Orang Tolol di dunia perte
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO", callback_data="aboutmanu_"),    
-    ],
+        InlineKeyboardButton(
+            "➕ Tambahkan saya ke Grup Anda ➕", url="http://t.me/asisteniambot?startgroup=true")],
     [
-        InlineKeyboardButton(text="⛑ Help & Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="INFO 🚀", callback_data="aboutmanu_"),    
+        InlineKeyboardButton(text="Help & Commands ⛑", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="📣 CH Support", url="t.me/infoiam"
-        ),
-    ],
-    [
+            text="Channel Support 📣", url="t.me/infoiam"
         InlineKeyboardButton(
-            text="🔥 Group Support", url="t.me/emehcommunity"
+            text="Group Support 🔥", url="t.me/emehcommunity"
         ),
     ],
 ]
