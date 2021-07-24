@@ -65,7 +65,7 @@ from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 PM_START_TEXT = """
 Halo pantek, aku [IAM Robot](http://telegra.ph/file/ce9bdfa7d3e6a24481cde.jpg)
 
-Aku Official Bot Group IAM Robot untuk membasmi Orang-Orang Tolol di dunia pertelean.
+Bot untuk Mengelola Grup mu dengan Simple dan Mudah!
 
 ✪ Baca Dulu Info Biar Paham Pantek ✪
 """
@@ -73,7 +73,7 @@ Aku Official Bot Group IAM Robot untuk membasmi Orang-Orang Tolol di dunia perte
 buttons = [
     [
         InlineKeyboardButton(
-            "➕ Tambahkan saya ke Grup Anda ➕", url="http://t.me/asisteniambot?startgroup=true")],
+            "➕ Tambahkan ke Grup ➕", url="http://t.me/asisteniambot?startgroup=true")],
     [
         InlineKeyboardButton(text="INFO 🚀", callback_data="aboutmanu_"),    
         InlineKeyboardButton(text="Help & Commands ⛑", callback_data="help_back"),
@@ -81,11 +81,6 @@ buttons = [
     [
         InlineKeyboardButton(
             text="Channel Support 📣", url="http://t.me/infoiam"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Group Support 🔥", url="http://t.me/emehcommunity"
         ),
     ],
 ]
@@ -97,7 +92,7 @@ HELP_STRINGS = f"""
 ✪ /donate: Support owner.
 ✪ /settings: 
    ◔ di PM: Command ini digunakan hanya untuk di PM
-   ◔ in a Group: Langsung akan di arahkan ke PM bot
+   ◔ di grup: Langsung akan di arahkan ke PM bot
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -365,11 +360,11 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*Halo lagi pantek!  Namaku {dispatcher.bot.first_name} \n\nAku dalah Bot Group Management Yang Dimanage oleh [Iam](https://t.me/iamnibng) .* "
-            f"\n\n 🔥 Join [IAM Support](https://t.me/infoiam) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
-            f"\n\n Aku punya banyak fungsi seperti Flood Control, Warn, Ban dan fungsi lain nya untuk mencegah orang-orang tolol merusuh diGroup mu!"
-            f"\n\nCukup Jadikan Aku Admin dan Kita Bantai Orang Goblok Di Telegram."
-            f"\n\n👇 **tekan tombol dibawah untuk lebih banyak informasi** 👇",
+            text=f"Halo lagi pantek! Namaku {dispatcher.bot.first_name} \n\nAku adalah Bot Group Management yang dimanage oleh [Iam](https://t.me/iamnibng)."
+            f"\n\n🔥 Join [IAM Support](https://t.me/infoiam) Untuk Support Channel Owner {dispatcher.bot.first_name} 🔥"
+            f"\n\nAku punya banyak fungsi seperti flood control, warn, ban dan fungsi lainnya untuk mencegah orang-orang tolol merusuh digrup mu!"
+            f"\n\nCukup jadikan aku admin dan kita bantai orang goblok di Telegram."
+            f"\n\n**Tekan tombol dibawah untuk lebih banyak informasi** 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -384,7 +379,7 @@ def DaisyX_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="⛑ Help & Commands", callback_data="help_back"
+                            text="Group Support 🔥", url=f"http://t.me/emehcommunity"
                         )
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
@@ -403,7 +398,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nTambakan {dispatcher.bot.first_name} Ke Groupmu [Disini](http://t.me/{dispatcher.bot.username}?startgroup=true) dan pilih Groupmu. \n"
-            f"\n\nDapatkan info tentang bot {dispatcher.bot.first_name} Dengan Pc Kontak [Iam](https://t.me/iamnibng).\n"
+            f"\n\nDapatkan info tentang bot {dispatcher.bot.first_name} Dengan melihat Channel [𝐈𝐀𝐌 𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/infoiam).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
