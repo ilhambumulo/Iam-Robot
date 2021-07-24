@@ -85,7 +85,7 @@ buttons = [
             "Group Support 🔥", url=f"http://t.me/emehcommunity")
         ]
     ]
-),
+],
 
 
 HELP_STRINGS = f"""
