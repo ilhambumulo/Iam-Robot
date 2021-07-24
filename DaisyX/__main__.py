@@ -80,6 +80,7 @@ buttons = [
     ],[
         InlineKeyboardButton(
             "Channel Support 📣", url=f"http://t.me/infoiam")
+    ],[
         InlineKeyboardButton(
             "Group Support 🔥", url=f"http://t.me/emehcommunity")
         ),
