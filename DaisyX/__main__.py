@@ -75,12 +75,12 @@ buttons = [
         InlineKeyboardButton(
             "➕ Tambahkan ke Grup ➕", url="http://t.me/asisteniambot?startgroup=true")],
     [
-        InlineKeyboardButton(text="INFO 🚀", callback_data="aboutmanu_"),    
-        InlineKeyboardButton(text="Help & Commands ⛑", callback_data="help_back"),
+        InlineKeyboardButton(text="INFO", callback_data="aboutmanu_"),    
+        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="Channel Support 📣", url="http://t.me/infoiam"
+            text="📣 Channel Support", url="http://t.me/infoiam"
         ),
     ],
 ]
