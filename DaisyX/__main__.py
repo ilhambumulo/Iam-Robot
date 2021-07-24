@@ -77,12 +77,11 @@ buttons = [
     [
         InlineKeyboardButton(text="INFO 🚀", callback_data="aboutmanu_"),    
         InlineKeyboardButton(text="Help & Commands ⛑", callback_data="help_back"),
-    ],
-    [
+    ],[
         InlineKeyboardButton(
-            text="Channel Support 📣", url="t.me/infoiam"
+            "Channel Support 📣", url=f"http://t.me/infoiam")
         InlineKeyboardButton(
-            text="Group Support 🔥", url="t.me/emehcommunity"
+            "Group Support 🔥", url=f"http://t.me/emehcommunity")
         ),
     ],
 ]
